@@ -16,7 +16,7 @@
         body {
             font-family: 'Brawl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: #1a1a2e;
-            background-image: url('https://i.imgur.com/JQJxZ1T.jpg');
+            background-image: url('https://w0.peakpx.com/wallpaper/340/349/HD-wallpaper-force-starr-spike-brawlstars-dark-space-thumbnail.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -45,7 +45,7 @@
         }
         
         .logo {
-            width: 180px;
+            width: 100px;
             height: auto;
             margin: 0 auto 15px;
             display: block;
@@ -117,6 +117,53 @@
             gap: 8px;
         }
         
+        /* New Device Selection Styles */
+        .device-options {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .device-option {
+            flex: 1;
+            background: #2d4059;
+            border: 2px solid #3d5a80;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+align-items: center;
+        }
+        
+        .device-option:hover {
+            transform: translateY(-3px);
+            border-color: #ffd700;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.2);
+        }
+        
+        .device-option.selected {
+            border-color: #ffd700;
+            background: #4a6fa5;
+            box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+        }
+        
+        .device-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+            object-fit: contain;
+        }
+        
+        .device-name {
+            font-size: 1rem;
+            font-weight: 500;
+            color: white;
+        }
+        
         input, select {
             width: 100%;
             padding: 14px 15px 14px 40px;
@@ -135,11 +182,7 @@
         }
         
         input[type="text"] {
-            background-image: url('https://icon-library.com/images/username-icon-png/username-icon-png-5.jpg');
-        }
-        
-        select {
-            background-image: url('https://icon-library.com/images/icon-for-mobile/icon-for-mobile-27.jpg');
+            background-image: url('');
         }
         
         input::placeholder {
@@ -248,7 +291,8 @@
             border: none;
             border-radius: 50px;
             padding: 16px 32px;
-            font-size: 1.1rem;
+            font-size: 1.
+1rem;
             font-weight: 700;
             text-transform: uppercase;
             cursor: pointer;
@@ -305,7 +349,7 @@
         @media (max-width: 480px) {
             body {
                 padding: 15px;
-                background-image: url('https://i.imgur.com/JQJxZ1T-mobile.jpg');
+                background-image: url("https://wallpapersok.com/images/hd/brawl-stars-in-sunset-btobrx3eaera5nv7.jpg");
             }
             
             .container {
@@ -342,167 +386,229 @@
 <body>
     <div class="container">
         <!-- Character image in background -->
-        <img src="https://i.imgur.com/JQJxZ1T.jpg" alt="Brawl Stars" class="character-img">
+        <img src="">
         
         <!-- Main logo -->
-        <img src="https://www.freepnglogos.com/uploads/brawl-stars-png-logo/brawl-stars-png-logo-0.png" class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Logo_of_Brawl_Stars.svg/1200px-Logo_of_Brawl_Stars.svg.png" class="logo">
         
-        <div class="header">
+    <div class="header">
             <h1 class="game-title">Gems & Coins Generator</h1>
-            <div class="game-subtitle">Free Gems & Coins for Brawl Stars</div>
-            <div class="status-badge">
-                <i class="fas fa-circle"></i>
-                <span>STATUS: ONLINE</span>
-            </div>
+
+<style>
+.game-title {
+    color: #ffd700;
+    font-size: 1.2rem;  /* Smaller size */
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+/* For very small screens */
+@media (max-width: 350px) {
+    .game-title {
+        font-size: 1.1rem;
+    }
+}
+</style>
+        <div class="">  
         </div>
+        </div>
+        
+        </span>
+     <div class="device-selector">
+  <div class="step-title">
+    <i class="fas fa-mobile-alt"></i> Select Your Device
+  </div>
+  <div class="device-options">
+    <div class="device-option" onclick="selectDevice(this, 'android')">
+      <img src="https://www.svgrepo.com/show/145061/android-logo.svg" alt="android">
+      <span>Android</span>
+    </div>
+    <div class="device-option" onclick="selectDevice(this, 'ios')">
+      <img src="https://cdn.freebiesupply.com/logos/large/2x/apple-black-logo-png-transparent.png" alt="iOS">
+      <span>ios</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.device-selector {
+  margin-bottom: 15px;
+}
+
+.step-title {
+  color: #ffd700;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.device-options {
+  display: flex;
+  gap: 20px;
+}
+
+.device-option {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #3d5a80;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.device-option.selected {
+  border-color: #ffd700;
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+.device-option img {
+  width: 20px;
+  height: 22px;
+  margin-bottom: 5px;
+}
+
+.device-option span {
+  font-size: 0.8rem;
+}
+</style>
+
+<script>
+function selectDevice(element, device) {
+  // Remove selected class from all options
+  document.querySelectorAll('.device-option').forEach(opt => {
+    opt.classList.remove('selected');
+  });
+  
+  // Add selected class to clicked option
+  element.classList.add('selected');
+  
+  // Store selected device (can be used for form submission)
+  console.log("Selected device:", device);
+}
+</script>       </div>
         
         <div class="step">
             <span class="step-title">
-            </span>
-         <input type="text" placeholder="YOUR GAMING ID/USERNAME" pattern="[A-Z0-9]{6,12}" inputmode="text">
-        </div>
-        <div class="step">
-            <span class="step-title">
-                STEP 2: SELECT YOUR PLATFORM
-            </span>
-            <select>
-                <option value="">Choose your platform</option>
-                <option value="android">Android</option>
-                <option value="ios">iOS</option>
-            </select> 
-        </div>
-        
-        <div class="step">
-            <span class="step-title">
-                STEP 3: SELECT RESOURCES
-            </span>
-            <div class="resource-container">
-                <!-- Gems Section -->
-                <div class="resource-section">
-                    <h3 class="section-title">Select Gems</h3>
-                    <div class="resource-grid">
-                        <div class="resource-option" onclick="selectResource(this, 'gems')">
-                            <div class="icon-wrapper">
-                                <img src="https://static.wikia.nocookie.net/brawlstars/images/a/aa/Gem.png/revision/latest?cb=20181219074149&path-prefix=fr" alt="Gems" class="resource-icon">
-                            </div>
-                            <div class="resource-amount">100</div>
-                           
-                        </div>
-                        <div class="resource-option" onclick="selectResource(this, 'gems')">
-                            <div class="icon-wrapper">
-                                <img src="https://static.wikia.nocookie.net/brawlstars/images/a/aa/Gem.png/revision/latest?cb=20181219074149&path-prefix=fr" alt="Gems" class="resource-icon">
-                            </div>
-                            <div class="resource-amount">500</div>
-                            
-                        </div>
-                    </div>
-                </div>
                 
-                <!-- Coins Section -->
-                <div class="resource-section">
-                    <h3 class="section-title">Select Coins</h3>
-                    <div class="resource-grid">
-                        <div class="resource-option" onclick="selectResource(this, 'coins')">
-                            <div class="icon-wrapper">
-                                <img src="https://static.wikia.nocookie.net/brawlstarsconception/images/6/6d/Coin.png/revision/latest?cb=20170724135159" alt="Coins" class="resource-icon">
-                            </div>
-                            <div class="resource-amount">1000</div>
-                            
-                        </div>
-                        <div class="resource-option" onclick="selectResource(this, 'coins')">
-                            <div class="icon-wrapper">
-                                <img src="https://static.wikia.nocookie.net/brawlstarsconception/images/6/6d/Coin.png/revision/latest?cb=20170724135159" alt="Coins" class="resource-icon">
-                            </div>
-                            <div class="resource-amount">5000</div>
-                            
-                        </div>
-                    </div>
+<div class="resource-container" style="text-align: center;">
+    <!-- Gems Section -->
+    <div class="resource-section">
+        <h3 class="section-title">Select Gems</h3>
+        <div class="resource-grid" style="display: flex; justify-content: center; gap: 15px;">
+            <div class="resource-option" onclick="selectGem(this)">
+                <div class="icon-wrapper">
+                    <img src="https://static.wikia.nocookie.net/brawlstars/images/a/aa/Gem.png/revision/latest?cb=20181219074149&path-prefix=fr" alt="Gems" class="resource-icon">
                 </div>
+                <div class="resource-amount">100</div>
             </div>
-        </div>
-        
-        <div class="loading" id="loading">
-            <div class="loading-spinner"></div>
-            <div>Generating resources...</div>
-        </div>
-        
-        <button class="generate-btn" onclick="startGeneration()">
-            <i class="fas fa-bolt"></i>
-            GENERATE NOW
-        </button>
-        
-        <div class="footer">
-            <a href="https://verifyuser.org/cl/i/423484" class="social-icon"><i class="fab fa-discord"></i></a>
-            <a href="https://verifyuser.org/cl/i/423484" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="https://verifyuser.org/cl/i/423484" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <div class="resource-option" onclick="selectGem(this)">
+                <div class="icon-wrapper">
+                    <img src="https://static.wikia.nocookie.net/brawlstars/images/a/aa/Gem.png/revision/latest?cb=20181219074149&path-prefix=fr" alt="Gems" class="resource-icon">
+                </div>
+                <div class="resource-amount">500</div>
+            </div>
         </div>
     </div>
+
+    <!-- Coins Section -->
+    <div class="resource-section" style="margin-top: 20px;">
+        <h3 class="section-title">Select Coins</h3>
+        <div class="resource-grid" style="display: flex; justify-content: center; gap: 15px;">
+            <div class="resource-option" onclick="selectCoin(this)">
+                <div class="icon-wrapper">
+                    <img src="https://static.wikia.nocookie.net/brawlstarsconception/images/6/6d/Coin.png/revision/latest?cb=20170724135159" alt="Coins" class="resource-icon">
+                </div>
+                <div class="resource-amount">1000</div>
+            </div>
+            <div class="resource-option" onclick="selectCoin(this)">
+                <div class="icon-wrapper">
+                    <img src="https://static.wikia.nocookie.net/brawlstarsconception/images/6/6d/Coin.png/revision/latest?cb=20170724135159" alt="Coins" class="resource-icon">
+                </div>
+                <div class="resource-amount">5000</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// For gems selection
+function selectGem(clickedElement) {
+    // Get all gem options
+    const gemOptions = document.querySelectorAll('.resource-section:first-child .resource-option');
     
-    <script>
-        // Track selected resources
-        const selectedResources = {
-            gems: null,
-            coins: null
-        };
+    // Remove selection from all gems
+    gemOptions.forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Add selection to clicked gem
+    clickedElement.classList.add('selected');
+}
 
-        function selectResource(element, type) {
-            // Remove selected class from all options of this type
-            const options = element.closest('.resource-grid').querySelectorAll('.resource-option');
-            options.forEach(opt => {
-                opt.classList.remove('selected');
-            });
-            
-            // Add selected class to clicked option
-            element.classList.add('selected');
-            
-            // Store the selection
-            selectedResources[type] = {
-                amount: element.querySelector('.resource-amount').textContent,
-                name: element.querySelector('.resource-name').textContent
-            };
+// For coins selection
+function selectCoin(clickedElement) {
+    // Get all coin options
+    const coinOptions = document.querySelectorAll('.resource-section:last-child .resource-option');
+    
+    // Remove selection from all coins
+    coinOptions.forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Add selection to clicked coin
+    clickedElement.classList.add('selected');
+}
+</script></div>
+
+<script>
+let selectedGems = null;
+let selectedCoins = null;
+
+function selectResource(element, type, amount) {
+    // Deselect all options of the same type first
+    const allOptions = document.querySelectorAll('.resource-option');
+    allOptions.forEach(opt => {
+        if (opt.getAttribute('onclick').includes(`'${type}'`)) {
+            opt.classList.remove('selected');
         }
-        
-        function startGeneration() {
-            // 1. Get user inputs
-            const playerTag = document.querySelector('input').value;
-            const platform = document.querySelector('select').value;
-            
-            // 2. Validate inputs
-            if (!playerTag || !/^#[A-Z0-9]{6,12}$/i.test(playerTag)) {
-                alert("❌ Please enter a valid Player Tag (e.g. #ABCD123)");
-                return false;
-            }
-            if (!platform) {
-                alert("❌ Please select your platform");
-                return false;
-            }
-            if (!selectedResources.gems && !selectedResources.coins) {
-                alert("❌ Please select at least one resource");
-                return false;
-            }
+    });
 
-            // 3. Show loading animation
-            document.getElementById('loading').style.display = 'block';
-            const btn = document.querySelector('.generate-btn');
-            btn.disabled = true;
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> VERIFYING ACCOUNT...';
+    // Select the clicked option
+    element.classList.add('selected');
+    
+    // Store selection
+    if (type === 'gems') {
+        selectedGems = amount;
+    } else if (type === 'coins') {
+        selectedCoins = amount;
+    }
+    
+    console.log("Selected Gems:", selectedGems, "| Selected Coins:", selectedCoins);
+}
+</script>
 
-            // 4. Redirect to CPA offer after 2 seconds
-            setTimeout(() => {
-                const redirectUrl = "https://verifyuser.org/cl/i/423484?" +
-                    "tag=" + encodeURIComponent(playerTag || '') +
-                    "&platform=" + encodeURIComponent(platform || '') +
-                    "&gems=" + encodeURIComponent(selectedResources.gems?.amount || '0') +
-                    "&coins=" + encodeURIComponent(selectedResources.coins?.amount || '0') +
-                    "&utm_source=brawl_lp" +
-                    "&utm_medium=cpa" +
-                    "&utm_campaign=gems_coins";
-                
-                window.location.href = redirectUrl;
-            }, 2000);
-            
-            return false;
-        }
-    </script>
-</body>
-</html>
+<style>
+.resource-option.selected {
+    border: 2px solid #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+</style>
+        </div>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 30px;">
+    <button class="generate-btn" onclick="startGeneration()">
+        <i class="fas fa-bolt"></i>
+        GENERATE NOW
+    </button>
+</div>
